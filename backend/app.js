@@ -10,7 +10,7 @@ const { errors } = require('celebrate');
 const { routes } = require('./src/routes/index');
 const { requestLogger, errorLogger } = require('./src/middlewares/logger');
 const centralizedErrorHandling = require('./src/middlewares/centralized-error-handling');
-const { limiterOptions, corsOptions } = require('./src/utils/constants');
+const { limiterOptions } = require('./src/utils/constants');
 
 const { PORT = 3000 } = process.env;
 
@@ -20,7 +20,7 @@ const app = express();
 
 const limiter = rateLimit(limiterOptions);
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(limiter);
 app.use(helmet.hidePoweredBy());
 app.use(requestLogger);

@@ -33,12 +33,12 @@ const limiterOptions = {
   max: 100,
 };
 
-const corsOptions = {
-  origin: '*',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
-};
+// const corsOptions = {
+//   origin: '*',
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//   preflightContinue: false,
+//   optionsSuccessStatus: 204,
+// };
 
 module.exports = {
   CREATED_STATUS,
@@ -70,5 +70,4 @@ module.exports = {
   SERVER_ERROR_TEXT,
 
   limiterOptions,
-  corsOptions,
 };

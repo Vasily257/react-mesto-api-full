@@ -48,7 +48,7 @@ function App() {
           setIsRegistered(true);
           setInfoTooltipOpen(true);
           setEmail(data.data.email);
-          navigate('/sign-in');
+          navigate('/signin');
         }
       })
       .catch((error) => {
@@ -68,6 +68,8 @@ function App() {
       .authorize({ email, password })
       .then((data) => {
         if (data.token) {
+          console.log(data);
+          debugger;
           localStorage.setItem('token', data.token);
           setEmail(email);
           setLoggedIn(true);
@@ -135,10 +137,10 @@ function App() {
               }
             />
             <Route
-              path="/sign-up"
+              path="/signup"
               element={<Register onRegister={onRegister} />}
             />
-            <Route path="/sign-in" element={<Login onLogin={onLogin} />} />
+            <Route path="/signin" element={<Login onLogin={onLogin} />} />
             <Route path="*" element={<Notfoundpage />} />
           </Routes>
         </CardsContext.Provider>

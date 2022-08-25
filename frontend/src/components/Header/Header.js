@@ -31,7 +31,7 @@ export default function Header({
                 {userEmail}
               </span>
               <Link
-                to="/sign-in"
+                to="/signin"
                 className={`button header__link header__link_out ${
                   isMenuOpen && 'header__email_menu-opened'
                 }`}
@@ -53,17 +53,17 @@ export default function Header({
           }
         />
         <Route
-          path="/sign-up"
+          path="/signup"
           element={
-            <Link to="/sign-in" className="button header__link">
+            <Link to="/signin" className="button header__link">
               Войти
             </Link>
           }
         />
         <Route
-          path="/sign-in"
+          path="/signin"
           element={
-            <Link to="/sign-up" className="button header__link">
+            <Link to="/signup" className="button header__link">
               Регистрация
             </Link>
           }

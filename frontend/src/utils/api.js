@@ -43,6 +43,16 @@ class Api {
     });
   }
 
+  updateAvatar(data) {
+    return fetch(`${this._url}/users/me/avatar`, {
+      method: 'PATCH',
+      headers: this._headers,
+      body: JSON.stringify(data),
+    }).then((res) => {
+      return this._handleResponse(res, 'Аватар пользователя не изменен');
+    });
+  }
+
   addNewCard(data) {
     return fetch(`${this._url}/cards`, {
       method: 'POST',
@@ -79,22 +89,14 @@ class Api {
       });
     }
   }
-
-  updateAvatar(data) {
-    return fetch(`${this._url}/users/me/avatar`, {
-      method: 'PATCH',
-      headers: this._headers,
-      body: JSON.stringify(data),
-    }).then((res) => {
-      return this._handleResponse(res, 'Аватар пользователя не изменен');
-    });
-  }
 }
 
+const token = localStorage.getItem('token');
+
 export const api = new Api({
-  baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-41',
+  baseUrl: 'https://api.kalmykov.mesto.nomoredomains.sbs/',
   headers: {
-    authorization: 'b6bde9be-8674-4eca-8179-302e0a4e2b6f',
+    authorization: `Bearer ${token}`,
     'Content-Type': 'application/json',
   },
 });

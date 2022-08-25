@@ -1,4 +1,4 @@
-const BASE_URL = 'https://auth.nomoreparties.co';
+const BASE_URL = 'https://api.kalmykov.mesto.nomoredomains.sbs';
 
 function checkResponse(response) {
   return response.ok
@@ -32,7 +32,7 @@ export function authorize({ password, email }) {
   }).then(checkResponse);
 }
 
-export function getContent( token ) {
+export function getContent(token) {
   return fetch(`${BASE_URL}/users/me`, {
     method: 'GET',
     headers: {

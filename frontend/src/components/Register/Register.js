@@ -87,7 +87,7 @@ export default function Register({ onRegister }) {
         </form>
         <div className="popup__footer">
           <span className="popup__footer-text">Уже зарегистрированы?</span>
-          <Link className="button popup__footer-button" to="/sign-in">
+          <Link className="button popup__footer-button" to="/signin">
             Войти
           </Link>
         </div>

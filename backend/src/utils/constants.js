@@ -9,8 +9,6 @@ const INTERNAL_SERVER_ERROR_STATUS = 500;
 const DUPLICATE_RECORD_CODE = 11000;
 const SALT_ROUNDS = 10;
 
-const JWT_SECRET = '3aae658639ed01fabf210d4c477f1dec';
-
 const USER_CREATION_ERROR_TEXT = 'Переданы некорректные данные при создании пользователя.';
 const USER_UPDATE_PROFILE_ERROR_TEXT = 'Переданы некорректные данные при обновлении профиля пользователя.';
 const USER_UPDATE_AVATAR_ERROR_TEXT = 'Переданы некорректные данные при обновлении аватара пользователя.';
@@ -53,8 +51,6 @@ module.exports = {
 
   DUPLICATE_RECORD_CODE,
   SALT_ROUNDS,
-
-  JWT_SECRET,
 
   AUTHORIZATION_WARNING_TEXT,
   AUTHORIZATION_FAILED_TEXT,

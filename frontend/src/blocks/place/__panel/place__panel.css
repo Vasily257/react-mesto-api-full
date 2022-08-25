@@ -1,0 +1,13 @@
+.place__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 79px;
+
+  margin: 0;
+  padding-left: 21px;
+
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+}

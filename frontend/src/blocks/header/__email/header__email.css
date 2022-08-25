@@ -1,0 +1,29 @@
+.header__email {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+
+  display: none;
+
+  margin-top: 12px;
+  margin-left: auto;
+
+  transform: translateX(-50%);
+  text-decoration: none;
+
+  font-size: 18px;
+}
+
+@media screen and (min-width: 600px) {
+  .header__email {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    margin-top: 8px;
+
+    transform: translateX(0);
+  }
+}

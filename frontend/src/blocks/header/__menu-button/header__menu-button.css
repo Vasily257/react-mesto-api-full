@@ -1,0 +1,18 @@
+.header__menu-button {
+  position: relative;
+  top: 4px;
+  right: 10px;
+
+  display: block;
+
+  width: 24px;
+  height: 21px;
+
+  background-image: url(../../../images/header/open-button.svg);
+}
+
+@media screen and (min-width: 600px) {
+  .header__menu-button {
+    display: none;
+  }
+}

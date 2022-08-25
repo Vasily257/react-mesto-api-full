@@ -1,0 +1,10 @@
+.index-page__section {
+  position: relative;
+  margin: 0 19px;
+}
+
+@media screen and (min-width: 935px) {
+  .index-page__section {
+    margin: 0 auto;
+  }
+}

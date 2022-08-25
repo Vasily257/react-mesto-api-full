@@ -1,0 +1,16 @@
+.profile__info {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+}
+
+@media screen and (min-width: 600px) {
+  .profile__info {
+    display: block;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    margin-left: 30px;
+  }
+}

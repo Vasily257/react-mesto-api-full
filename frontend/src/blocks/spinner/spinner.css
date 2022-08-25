@@ -1,0 +1,32 @@
+.spinner {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+
+  width: 30px;
+  height: 30px;
+
+  transform: translate(-50%, -50%);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.spinner::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  width: calc(100vw + 30px);
+  height: calc(100vh + 30px);
+
+  content: '';
+  transform: translate(-50%, -50%);
+
+  opacity: 0.5;
+  background-color: #000000;
+}

@@ -1,0 +1,17 @@
+.spinner__blob_left {
+  left: 0;
+
+  animation: blob-left 1s infinite ease-in;
+}
+
+@keyframes blob-left {
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50%,
+  100% {
+    top: 100%;
+    left: 50%;
+  }
+}

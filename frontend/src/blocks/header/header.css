@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+  width: auto;
+  max-width: 880px;
+  min-height: 56px;
+}
+
+header::before {
+  position: absolute;
+  top: -29px;
+
+  left: -19px;
+
+  display: block;
+
+  width: calc(100% + 19px * 2);
+  height: 83px;
+
+  content: '';
+  opacity: 0.7;
+
+  border-top: 1px solid #545454;
+  border-bottom: 1px solid #545454;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    min-height: 74px;
+
+    border-bottom: 1px solid #545454;
+  }
+
+  header::before {
+    display: none;
+  }
+}

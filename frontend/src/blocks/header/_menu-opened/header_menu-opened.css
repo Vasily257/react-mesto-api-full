@@ -1,0 +1,13 @@
+.header_menu-opened {
+  min-height: 197px;
+}
+
+.header_menu-opened::before {
+  top: 111px;
+}
+
+@media screen and (min-width: 600px) {
+  .header_menu-opened {
+    min-height: 74px;
+  }
+}

@@ -8,7 +8,8 @@
     "dev": "nodemon ./app.js",
     "test": "echo && exit 1",
     "lint": "npx eslint .",
-    "lint-fix": "npx eslint . --fix"
+    "lint-fix": "npx eslint . --fix",
+    "deploy-remote": "scp -r ./* vasily257@158.160.10.193:/home/vasily257/backend"
   },
   "repository": {
     "type": "git",

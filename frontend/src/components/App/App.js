@@ -69,8 +69,6 @@ function App() {
       .authorize({ email, password })
       .then((data) => {
         if (data.token) {
-          console.log(data);
-          debugger;
           localStorage.setItem('token', data.token);
           setEmail(email);
           setLoggedIn(true);

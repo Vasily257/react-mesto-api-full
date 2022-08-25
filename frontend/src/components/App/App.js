@@ -36,6 +36,7 @@ function App() {
 
   useEffect(() => {
     loggedIn && navigate('/');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loggedIn]);
 
   function onRegister({ email, password }) {

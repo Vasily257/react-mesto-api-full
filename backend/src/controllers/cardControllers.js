@@ -15,7 +15,7 @@ const {
 
 module.exports.getCards = async (req, res, next) => {
   try {
-    const cards = await Card.find({});
+    const cards = await Card.find({}).sort({ createdAt: -1 });
     res.send(cards);
   } catch (err) {
     next(err);

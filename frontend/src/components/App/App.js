@@ -48,7 +48,7 @@ function App() {
         if (data) {
           setIsRegistered(true);
           setInfoTooltipOpen(true);
-          setEmail(data.data.email);
+          setEmail(data.email);
           navigate('/signin');
         }
       })
@@ -95,7 +95,7 @@ function App() {
         .getContent(token)
         .then((response) => {
           if (response) {
-            setEmail(response.data.email);
+            setEmail(response.email);
             setLoggedIn(true);
           }
         })

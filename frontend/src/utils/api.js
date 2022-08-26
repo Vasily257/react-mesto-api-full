@@ -91,12 +91,10 @@ class Api {
   }
 }
 
-const token = localStorage.getItem('token');
-
 export const api = new Api({
-  baseUrl: 'https://api.kalmykov.mesto.nomoredomains.sbs',
+  baseUrl: 'http://localhost:3001',
   headers: {
-    authorization: `Bearer ${token}`,
+    authorization: `Bearer ${localStorage.getItem('token')}`,
     'Content-Type': 'application/json',
   },
 });

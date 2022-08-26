@@ -13,11 +13,11 @@ export default function Card({
 }) {
   const currentUser = useContext(CurrentUserContext);
 
-  const isOwn = owner._id === currentUser._id;
+  const isOwn = owner === currentUser._id;
   const cardDeleteButtonClassName = `button place__delete-button 
   ${!isOwn && 'place__delete-button_hidden'}`;
 
-  const isLiked = likes.some((like) => like._id === currentUser._id);
+  const isLiked = likes.some((like) => like === currentUser._id);
   const cardLikeButtonClassName = `button place__like-button 
   ${isLiked && 'place__like-button_active'}`;
 

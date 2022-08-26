@@ -101,7 +101,7 @@ class Api {
 }
 
 export const api = new Api({
-  baseUrl: 'https://kalmykov.mesto.nomoredomains.sbs',
+  baseUrl: 'https://api.kalmykov.mesto.nomoredomains.sbs',
   headers: {
     authorization: `Bearer ${localStorage.getItem('token')}`,
     'Content-Type': 'application/json',

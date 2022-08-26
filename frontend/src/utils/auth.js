@@ -1,4 +1,4 @@
-const BASE_URL = 'https://kalmykov.mesto.nomoredomains.sbs';
+const BASE_URL = 'https://api.kalmykov.mesto.nomoredomains.sbs';
 
 function checkResponse(response) {
   return response.ok

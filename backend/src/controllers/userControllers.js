@@ -18,33 +18,6 @@ const {
   EXISTING_USER_ERROR,
 } = require('../utils/constants');
 
-module.exports.getUsers = async (req, res, next) => {
-  try {
-    const users = await User.find({});
-
-    res.send(users);
-  } catch (err) {
-    next(err);
-  }
-};
-
-module.exports.getUserById = async (req, res, next) => {
-  try {
-    const user = await User.findById(req.params.id).orFail(() => {
-      throw new NotFoundError(MISSING_USER_ID_ERROR_TEXT);
-    });
-
-    res.send(user);
-  } catch (err) {
-    if (err.name === 'CastError') {
-      next(new BadRequestError(INCORRECT_USER_ID_ERROR_TEXT));
-      return;
-    }
-
-    next(err);
-  }
-};
-
 module.exports.getCurrentUser = async (req, res, next) => {
   const { _id } = req.user;
 

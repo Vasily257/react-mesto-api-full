@@ -15,6 +15,7 @@ import { registrationText } from '../../utils/constants';
 
 import * as auth from '../../utils/auth';
 import Notfoundpage from '../Notfoundpage/Notfoundpage';
+import { api } from '../../utils/api';
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -70,6 +71,7 @@ function App() {
       .then((data) => {
         if (data.token) {
           localStorage.setItem('token', data.token);
+          api.setToken(data.token);
           setEmail(email);
           setLoggedIn(true);
         } else {

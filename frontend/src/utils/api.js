@@ -2,6 +2,7 @@ class Api {
   constructor(options) {
     this._url = options.baseUrl;
     this._headers = options.headers;
+    this._token = null;
   }
 
   _handleResponse(res, errorText) {
@@ -9,6 +10,14 @@ class Api {
       return res.json();
     }
     return Promise.reject(errorText);
+  }
+
+  setToken(token) {
+    this._token = token;
+    this._headers = {
+      ...this._headers,
+      authorization: `Bearer ${this._token}`,
+    };
   }
 
   getUserInfo() {

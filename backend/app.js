@@ -25,6 +25,14 @@ app.use(limiter);
 app.use(helmet.hidePoweredBy());
 app.use(requestLogger);
 
+// Crash test
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 // Route handlers
 
 app.use(express.json());

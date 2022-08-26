@@ -12,11 +12,11 @@ const NotFoundError = require('../errors/not-found-error');
 
 const routes = express.Router();
 
-routes.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
+// routes.get('/crash-test', () => {
+//   setTimeout(() => {
+//     throw new Error('Сервер сейчас упадёт');
+//   }, 0);
+// });
 
 routes.post('/signin', validateUserData, login);
 routes.post('/signup', validateUserData, createUser);

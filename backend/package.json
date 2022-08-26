@@ -9,7 +9,7 @@
     "test": "echo && exit 1",
     "lint": "npx eslint .",
     "lint-fix": "npx eslint . --fix",
-    "deploy-remote": "scp -r ./* vasily257@158.160.10.193:/home/vasily257/backend"
+    "deploy-env": "scp -r ./.env vasily257@158.160.10.193:/home/vasily257/react-mesto-api-full/backend"
   },
   "repository": {
     "type": "git",

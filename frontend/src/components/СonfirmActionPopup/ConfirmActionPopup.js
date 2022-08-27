@@ -19,6 +19,8 @@ export default function ConfirmActionPopup({
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
+      onReset={()=>{}}
+      isValid={true}
     />
   );
 }

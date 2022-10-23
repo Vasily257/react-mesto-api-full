@@ -28,6 +28,8 @@ The project uses the following main library:
 To clone a project, you need to open desired directory and use the command:  
 **HTTPS**: `git clone https://github.com/Vasily257/react-mesto-api-full.git`  
 **SSH**: `git clone git@github.com:Vasily257/react-mesto-api-full.git`  
+
+To start a project, you need to open the «frontend» folder in the terminal and use the command `npm run start`. Then repeat this actions for the «backend» folder.
   
 ## Status
 The project is closed, there are no plans for completion.

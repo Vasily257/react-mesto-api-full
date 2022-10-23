@@ -14,7 +14,6 @@ Also the project has the express-server which processes and validates API-reques
 ## Links  
 A website link: https://kalmykov.mesto.nomoredomains.sbs/  
 A server link: https://api.kalmykov.mesto.nomoredomains.sbs/  
-IP adress: https://158.160.2.24/  
   
 ## Animation  
 The project uses simple animation like a smooth change of opacity or background color. Also the project has an animated preloader which displaying when user makes a request.

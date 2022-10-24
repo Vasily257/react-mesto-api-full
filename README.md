@@ -6,7 +6,7 @@ The project has an API for:
 - to get/create/register/login a user and to update his data  
 - to get/create/delete the cards and to manage the card likes  
   
-Also the project has the express-server which processes and validates API-requests. This server protected by the CORS, the Helmet and the Rate limit.
+Also the project has the server on the Express.js which processes and validates API-requests. This server protected by the CORS, the Helmet and the Rate limit.
   
 ## Technology stack  
 `JS`, `React.js`, `Express.js`, `MongoDB`, `Git`  

@@ -33,8 +33,10 @@ const limiterOptions = {
   max: 100,
 };
 
+const BASE_ALIAS = '/mesto/api';
+
 const corsOptions = {
-  origin: ['http://kalmykov.mesto.nomoredomains.sbs', 'https://kalmykov.mesto.nomoredomains.sbs'],
+  origin: '*',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204,
@@ -68,6 +70,8 @@ module.exports = {
   MISSING_CARD_ID_ERROR_TEXT,
 
   SERVER_ERROR_TEXT,
+
+  BASE_ALIAS,
 
   limiterOptions,
   corsOptions,

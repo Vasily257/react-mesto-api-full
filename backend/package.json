@@ -9,7 +9,8 @@
     "test": "echo && exit 1",
     "lint": "npx eslint .",
     "lint-fix": "npx eslint . --fix",
-    "deploy-env": "scp -r ./.env vasily257@158.160.10.193:/home/vasily257/react-mesto-api-full/backend"
+    "deploy-project": "scp -r ./* root@92.38.241.48:/home/mesto-api",
+    "deploy-env": "scp -r ./.env root@92.38.241.48:/home/mesto-api"
   },
   "repository": {
     "type": "git",

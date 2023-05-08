@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy-remote": "react-scripts build && scp -r ./build/* vasily257@158.160.10.193:/home/vasily257/react-mesto-api-full/frontend/build"
+    "deploy-remote": "react-scripts build && scp -r ./build/* root@92.38.241.48:/home/mesto"
   },
   "repository": {
     "type": "git",

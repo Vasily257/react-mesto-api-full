@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { BASE_ALIAS } from '../../utils/constants';
 
 export default function Notfoundpage() {
   return (
@@ -8,7 +9,7 @@ export default function Notfoundpage() {
           Здесь ничего нет
         </h2>
         <div className="popup__footer">
-          <Link to="/" className="button popup__footer-button">
+          <Link to={`${BASE_ALIAS.MESTO_FRONT}/`} className="button popup__footer-button">
             Вернуться на главную
           </Link>
         </div>

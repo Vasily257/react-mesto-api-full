@@ -5,6 +5,5 @@ export const registrationText = {
 
 
 export const BASE_ALIAS = {
-  MESTO_API: '/mesto/api',
   MESTO_FRONT: '/mesto',
 };

@@ -11,7 +11,7 @@ import Register from '../Register/Register';
 import InfoTooltip from '../InfoTooltip/InfoTooltip';
 import Spinner from '../Spinner/Spinner';
 
-import { registrationText } from '../../utils/constants';
+import { registrationText, BASE_ALIAS } from '../../utils/constants';
 
 import * as auth from '../../utils/auth';
 import Notfoundpage from '../Notfoundpage/Notfoundpage';
@@ -130,7 +130,7 @@ function App() {
         <CardsContext.Provider value={{ cards, setCards }}>
           <Routes>
             <Route
-              path="/"
+              path={`${BASE_ALIAS.MESTO_FRONT}/`}
               element={
                 <ProtectedRoute loggedIn={loggedIn}>
                   <Home />
@@ -138,11 +138,11 @@ function App() {
               }
             />
             <Route
-              path="/signup"
+              path={`${BASE_ALIAS.MESTO_FRONT}/signup`}
               element={<Register onRegister={onRegister} />}
             />
-            <Route path="/signin" element={<Login onLogin={onLogin} />} />
-            <Route path="*" element={<Notfoundpage />} />
+            <Route path={`${BASE_ALIAS.MESTO_FRONT}/signin`} element={<Login onLogin={onLogin} />} />
+            <Route path={`${BASE_ALIAS.MESTO_FRONT}/*`} element={<Notfoundpage />} />
           </Routes>
         </CardsContext.Provider>
 

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import useForm from '../../hooks/useForm';
 
+import { BASE_ALIAS } from '../../utils/constants';
+
 export default function Register({ onRegister }) {
   const { values, errors, isValid, handleChange, setValues, setIsValid } =
     useForm({ email: '', password: '' });
@@ -87,7 +89,7 @@ export default function Register({ onRegister }) {
         </form>
         <div className="popup__footer">
           <span className="popup__footer-text">Уже зарегистрированы?</span>
-          <Link className="button popup__footer-button" to="/signin">
+          <Link className="button popup__footer-button" to={`${BASE_ALIAS.MESTO_FRONT}/signin`}>
             Войти
           </Link>
         </div>

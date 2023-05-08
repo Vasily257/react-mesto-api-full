@@ -1,5 +1,6 @@
 import headerLogo from '../../images/header/logo.svg';
 import { Routes, Route, Link } from 'react-router-dom';
+import { BASE_ALIAS } from '../../utils/constants';
 
 export default function Header({
   userEmail,
@@ -20,7 +21,7 @@ export default function Header({
       />
       <Routes>
         <Route
-          path="/"
+          path={`${BASE_ALIAS.MESTO_FRONT}/`}
           element={
             <>
               <span
@@ -31,7 +32,7 @@ export default function Header({
                 {userEmail}
               </span>
               <Link
-                to="/signin"
+                to={`${BASE_ALIAS.MESTO_FRONT}/signin`}
                 className={`button header__link header__link_out ${
                   isMenuOpen && 'header__email_menu-opened'
                 }`}
@@ -53,17 +54,17 @@ export default function Header({
           }
         />
         <Route
-          path="/signup"
+          path={`${BASE_ALIAS.MESTO_FRONT}/signup`}
           element={
-            <Link to="/signin" className="button header__link">
+            <Link to={`${BASE_ALIAS.MESTO_FRONT}/signin`} className="button header__link">
               Войти
             </Link>
           }
         />
         <Route
-          path="/signin"
+          path={`${BASE_ALIAS.MESTO_FRONT}/signin`}
           element={
-            <Link to="/signup" className="button header__link">
+            <Link to={`${BASE_ALIAS.MESTO_FRONT}/signup`} className="button header__link">
               Регистрация
             </Link>
           }

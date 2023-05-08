@@ -1,5 +1,5 @@
 {
-  "name": "react-mesto-auth",
+  "name": "react-mesto-api",
   "version": "0.1.0",
   "private": true,
   "homepage":"/mesto",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vasily257/react-mesto-auth.git"
+    "url": "git+https://github.com/Vasily257/react-mesto-api-full"
   },
   "eslintConfig": {
     "extends": [

@@ -1,7 +1,6 @@
 {
-  "name": "express-mesto-gha",
+  "name": "react-mesto-front",
   "version": "1.0.0",
-  "description": "Проект Mesto фронтенд + бэкенд",
   "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
@@ -14,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vasily257/express-mesto-gha.git"
+    "url": "git+https://github.com/Vasily257/react-mesto-api-full"
   },
   "keywords": [],
   "author": "Vasiliy Kalmykov <vasily.sergeevich.k@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vasily257/express-mesto-gha/issues"
+    "url": "https://github.com/Vasily257/react-mesto-api-full/issues"
   },
   "devDependencies": {
     "eslint": "^8.21.0",

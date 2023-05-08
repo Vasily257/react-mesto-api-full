@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    loggedIn && navigate('/');
+    loggedIn && navigate(`${BASE_ALIAS.MESTO_FRONT}/`);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loggedIn]);
 
@@ -50,7 +50,7 @@ function App() {
           setIsRegistered(true);
           setInfoTooltipOpen(true);
           setEmail(data.email);
-          navigate('/signin');
+          navigate(`${BASE_ALIAS.MESTO_FRONT}/signin`);
         }
       })
       .catch((error) => {

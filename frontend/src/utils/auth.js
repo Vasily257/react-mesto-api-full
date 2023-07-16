@@ -1,4 +1,4 @@
-const BASE_URL = 'http://v1364358.hosted-by-vdsina.ru/mesto/api';
+const BASE_URL = 'https://v1364358.hosted-by-vdsina.ru/mesto/api';
 
 function checkResponse(response) {
   return response.ok

@@ -12,8 +12,8 @@ Also the project has the server on the Express.js which processes and validates 
 `JS`, `React.js`, `Express.js`, `MongoDB`, `Git`  
   
 ## Links  
-A website link: http://v1364358.hosted-by-vdsina.ru/mesto/  
-A server link: http://v1364358.hosted-by-vdsina.ru/mesto/api  
+A website link: https://v1364358.hosted-by-vdsina.ru/mesto/  
+A server link: https://v1364358.hosted-by-vdsina.ru/mesto/api  
   
 ## Animation  
 The project uses simple animation like a smooth change of opacity or background color. Also the project has an animated preloader which displaying when user makes a request.
